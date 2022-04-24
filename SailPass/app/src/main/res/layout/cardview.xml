@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/cardViewTextName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            />
+
+
+
+        <TextView
+            android:id="@+id/cardViewTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cardViewTextName"
+            />
+
+
+
+        <TextView
+            android:id="@+id/cardViewTextArrival"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardViewTextName"
+            android:gravity="left"
+
+            />
+
+        <TextView
+            android:id="@+id/cardViewTextDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cardViewTextPrice"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/cardViewTextPriceChild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cardViewTextPrice"
+            />
+
+        <Button
+            android:id="@+id/bookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cardViewTextDeparture"
+            android:backgroundTint="#185980"
+            android:hint="Book Ticket"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

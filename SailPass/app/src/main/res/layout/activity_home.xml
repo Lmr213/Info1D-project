@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <LinearLayout
+        android:id="@+id/home_0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="HOME"
+            android:textSize="30dp" />
+
+        <SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/wbMsg"
+            android:layout_marginTop="10dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Destination" />
+
+        <ImageView
+            android:id="@+id/ship_image"
+            android:layout_width="147dp"
+            android:layout_height="98dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ship" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#185980"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:id="@+id/home_2"
+            android:layout_width="352dp"
+            android:layout_height="371dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="5"
+            android:background="#185980"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home_ver1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="20dp"
+                android:background="#185980"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/checklist_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="Checklist"
+                    android:textSize="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="20dp"
+                    />
+                <ImageButton
+                    android:id="@+id/go_list"
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/check"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_ver2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#185980"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="Profile"
+                    android:textSize="20dp"
+
+                    android:paddingLeft="50dp"
+                    android:paddingRight="20dp"
+                    />
+                <ImageButton
+                    android:id="@+id/go_profile"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/user" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/home_3"
+            android:layout_width="352dp"
+            android:layout_height="371dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="#185980"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home_ver3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#185980"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/QR_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="100dp"
+                    android:text="E-boarding Pass"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/go_QR"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/barcode"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

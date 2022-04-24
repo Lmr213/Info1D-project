@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+    <LinearLayout
+        android:id="@+id/account_0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/cardview_light_background"
+            android:src="@drawable/previous"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Account"
+            android:textSize="45dp"
+            style="@style/MaterialAlertDialog.Material3.Title.Text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/account_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#185980"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/account_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/cardview_light_background"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="94dp"
+                android:layout_height="76dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:text="Raziq" />
+
+            <ImageButton
+                android:id="@+id/btn_log_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/cardview_light_background"
+                app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">>
+
+            <TextView
+                android:id="@+id/list_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="My tickets"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
