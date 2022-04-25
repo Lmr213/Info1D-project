@@ -1,4 +1,4 @@
-# Info1D-project\
+# Info1D-project
 50.001 Info 1D group 2H\
 Lu Mingrui 1005354\
 Zhang Chunjie 1005604\
